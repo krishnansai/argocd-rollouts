@@ -73,6 +73,9 @@ spec:
     blueGreen:
       activeService: realtimeapp-active
       previewService: realtimeapp-preview
+      trafficRouting:
+        nginx:
+          stableIngress: realtimeapp-ingress
       prePromotionAnalysis:
         templates:
         - templateName: realtime-analysis
